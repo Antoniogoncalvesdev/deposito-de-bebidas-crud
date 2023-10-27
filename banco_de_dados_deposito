@@ -1,0 +1,13 @@
+CREATE DATABASE `produtos` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+USE produtos;
+
+CREATE TABLE `bebidas` (
+   `id` int(11) NOT NULL AUTO_INCREMENT,
+   `nome_produto` varchar(20) DEFAULT NULL,
+   `preco` float(6,2) DEFAULT NULL,
+   `tipo` varchar(20) DEFAULT NULL,
+   `quantidade` int(8) DEFAULT NULL,
+   `adicionado_por` varchar(20) DEFAULT NULL,
+   PRIMARY KEY (`id`)
+ ) DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
