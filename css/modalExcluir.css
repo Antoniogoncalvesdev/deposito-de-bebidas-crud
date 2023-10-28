@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: url(../imgs/pexels-henry-de-guzman-10134549.jpg);
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#borda{
+    box-shadow: 0 3px 3px;
+    width: 600px;
+    background-color: white;
+    border-radius: 5px;
+}
+h2 {
+    border-bottom: 1px solid gray;
+    padding: 20px;
+}
+#paragrafos{
+    padding: 30px;
+    margin-left: -15px;
+}
+#botoesInput{
+    border-top: 1px solid gray;
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+}
+p{
+    padding: 10px;  
+}
+input {
+    padding: 7px;
+    margin: 0px 5px;
+    margin-top: 15px;
+}
+#cancelar-botao{
+    background-color: gray;
+    padding: 15px 5px;
+    border-radius: 5px;
+}
+#excluir-botao{
+    background-color: red;
+    padding: 15px 5px;
+    border-radius: 5px;
+    color: gray;
+}
+#botoesInput button a{
+    text-decoration: none;
+    color: white;
+}
