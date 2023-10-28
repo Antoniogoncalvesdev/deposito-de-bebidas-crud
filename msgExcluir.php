@@ -10,10 +10,16 @@
     <title>Sucesso!</title>
 </head>
 <body>
-    <div>
-        <span>Dados deletados com sucesso!</span>
-        <a href="index.php">Voltar para página inicial</a>
-    </div>
+    <main>
+        <div>
+            <div>
+                <span>Dados deletados com sucesso!</span>
+            </div>
+            <div id='aa'>
+                <a href="index.php">Voltar para página inicial</a>
+            </div>
+        </div>
+    </main>
 </body>
 <?php 
     include("php/connect.php");
