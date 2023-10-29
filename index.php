@@ -56,7 +56,6 @@ $dados = mysqli_query($server, $sql) or die(mysqli_error($server));
             </div>
         </form>
         <?php
-        include("connect.php");
         $nome = $_GET["usuario"];
         $produto = $_GET["produto"];
         $preco = $_GET["preco"];
