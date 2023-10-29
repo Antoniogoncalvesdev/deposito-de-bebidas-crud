@@ -29,7 +29,7 @@ preco.addEventListener('input', function () {
 })
 
 preco.addEventListener('change', function () {
-    if(preco.value.endsWith(',') || preco.value.endsWith('.')) {
+    if(preco.value.endsWith('.')) {
         preco.value = `${preco.value}00`
     }
 })
