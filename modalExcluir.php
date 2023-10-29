@@ -51,9 +51,11 @@ $id = $_GET["id"] ?? '';
     confirmation_input.addEventListener('input', function() {
         if (confirmation_input.value == 'sim' || confirmation_input.value == 'Sim') {
             button.disabled = false
+            button.style.color = 'white'
 
         } else {
             button.disabled = true
+            button.style.color = 'gray'
         }
     })
 
