@@ -30,7 +30,7 @@
     if (mysqli_query($server, $sql)) {
 
     } else {
-        echo "Erro ao excluir: ". mysqli_error($con);
+        echo "Erro ao excluir!";
     }
 ?>
 </html>
