@@ -23,7 +23,7 @@ preco.addEventListener('input', function () {
         preco.value = preco.value.slice(0, tamanhoMaximo)
     }
 
-    if (!(isFinite(preco.value)) || preco.value.startsWith(',') || preco.value.startsWith('.')) {
+    if (!(isFinite(preco.value))) {
         preco.value = preco.value.slice(0, preco.value.length - 1)
     }
 })
