@@ -6,12 +6,24 @@ const quantidade = document.querySelector('input#quantidade')
 const tamanhoMaximo = 20
 
 nome.addEventListener('input', function () {
+    let pattern = /^[aA-zZ ]+$/
+
+    if (!(nome.value.match(pattern))) {
+        nome.value = nome.value.slice(0, (nome.value.length - 1))
+    } 
+
     if (nome.value.length > tamanhoMaximo) {
         nome.value = nome.value.slice(0, tamanhoMaximo)
     }
 })
 
 nomeProduto.addEventListener('input', function () {
+    let pattern = /^[aA-zZ0-9 ]+$/
+
+    if (!(nomeProduto.value.match(pattern))) {
+        nomeProduto.value = nomeProduto.value.slice(0, (nomeProduto.value.length - 1))
+    }
+
     if (nomeProduto.value.length > tamanhoMaximo) {
         nomeProduto.value = nomeProduto.value.slice(0, tamanhoMaximo)
     }
@@ -24,7 +36,7 @@ preco.addEventListener('input', function () {
     }
 
     if (!(isFinite(preco.value))) {
-        preco.value = preco.value.slice(0, preco.value.length - 1)
+        preco.value = preco.value.slice(0, (preco.value.length - 1))
     }
 })
 
@@ -35,6 +47,12 @@ preco.addEventListener('change', function () {
 })
 
 tipo.addEventListener('input', function () {
+    let pattern = /^[aA-zZ ]+$/
+
+    if (!(tipo.value.match(pattern))) {
+        tipo.value = tipo.value.slice(0, (tipo.value.length - 1))
+    }
+
     if (tipo.value.length > tamanhoMaximo) {
         tipo.value = tipo.value.slice(0, tamanhoMaximo)
     }
@@ -46,6 +64,6 @@ quantidade.addEventListener('input', function () {
     }
 
     if (!(isFinite(quantidade.value)) || quantidade.value.endsWith('.')) {
-        quantidade.value = quantidade.value.slice(0, quantidade.value.length - 1)
+        quantidade.value = quantidade.value.slice(0, (quantidade.value.length - 1))
     }
 })
